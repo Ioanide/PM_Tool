@@ -7,25 +7,25 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
-  </head> 
+  </head>
 
   <body onload="fetchIssues()">
-  
+
     <div class="container">
       <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        
+
       </div>
       <h1 id="tracker">Management Tracker Tool<small></small></h1><br>
       <div class="userform">
         <form id="useroption">
-           
+
         </form>
       </div>
       <div class="jumbotron">
         <h3><strong>User<strong></h3><br><br>
         <h3>Add New Issue:</h3><br>
-        <form id="issueInputForm">
+        <form id="issueInputForm" onsubmit="return saveIssue()">
           <div class="form-group">
             <label for="issueNameInput">Name</label>
             <input type="text" class="form-control" id="issueNameInput" placeholder="Write here"><br>
@@ -59,15 +59,14 @@
         </div>
       </div>
       <div class="footer">
-        
+
       </div>
     </div>
-    <script src="chance.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    
+    <script src="src/main.js"></script>
+
   </body>
 </html>
-
